@@ -3,13 +3,19 @@
   <title> DELIGHT </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
   <style media="screen">
-    @font-face {
-    font-family: 'MaplestoryOTFBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+        @font-face {
+      font-family: 'CookieRunOTF-Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+    #mylog{
+      font-family: 'CookieRunOTF-Bold';
+      color : coral;
+    }
   </style>
 </head>
 
@@ -20,22 +26,18 @@
     <li><a href="1.html">ENGLISH</a></li>
     <li><a href="2.html">CHINESE</a></li>
     <li><a href="3.html">PROGRAMMING</a></li>
-    <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';">
-
-    <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';">
+    <input id="version" type="button" value="night" onclick="nightDayHandler(this);">
   </ol>
 
   <div id="article">
-    <h2 id="mylog">MY LOG</h2>
-    <ul>
-      <li href="https://blog.naver.com/deli_minju">BLOG</li>
-      <li href="https://www.instagram.com/minzuiw/">INSTAGRAM</li>
-      <li href="https://github.com/deli-ght">GIT-HUB</li>
-    </ul>
+    <div id="mylog">
+      <h2>MY LOG</h2>
+      <ul>
+        <li> <a href="https://blog.naver.com/deli_minju">BLOG</li>
+        <li> <a href="https://www.instagram.com/minzuiw/">INSTAGRAM</li>
+        <li> <a href="https://github.com/deli-ght">GIT-HUB</li>
+      </ul>
+    </div>
   <div id="disqus_thread"></div>
   <script>
     /**

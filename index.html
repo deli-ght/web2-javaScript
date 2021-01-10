@@ -3,6 +3,7 @@
   <title> DELIGHT </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="colors.js">  </script>
 </head>
 
 <body>
@@ -12,13 +13,9 @@
     <li><a href="1.html">ENGLISH</a></li>
     <li><a href="2.html">CHINESE</a></li>
     <li><a href="3.html">PROGRAMMING</a></li>
-    <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';">
 
-    <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';">
+    <input id="version" type="button" value="night" onclick="
+    nightDayHandler(this)">
   </ol>
 
   <!--
