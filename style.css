@@ -1,0 +1,41 @@
+a{
+  color:skyblue;
+  text-decoration:none;
+}
+h1{
+  font-size:100px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:20px;
+}
+
+body{
+  margin:0;
+  background-color:beige;
+}
+@media(min-width:500px) {
+  #grid{
+      display:grid;
+      grid-template-columns: 200px 1fr;
+  }
+  #article{
+    padding:10px;
+  }
+
+  #grid ol{
+    border-right: 1px solid gray;
+    width:150px;
+    margin:0;
+    padding-left:50px;
+    padding-top:10px;
+  }
+}
+
+h2{
+  margin:3px;
+}
+
+#table{
+  text-align: center;
+}

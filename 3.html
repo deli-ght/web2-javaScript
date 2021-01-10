@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+  <title> DELIGHT </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+    @font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  </style>
+</head>
+
+<body>
+  <h1><a href="index.html"> PROGRAMMING </a> </h1>
+<div id="grid">
+  <ol>
+    <li><a href="1.html">ENGLISH</a></li>
+    <li><a href="2.html">CHINESE</a></li>
+    <li><a href="3.html">PROGRAMMING</a></li>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';">
+
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';">
+  </ol>
+
+  <div id="article">
+    <h2 id="mylog">MY LOG</h2>
+    <ul>
+      <li href="https://blog.naver.com/deli_minju">BLOG</li>
+      <li href="https://www.instagram.com/minzuiw/">INSTAGRAM</li>
+      <li href="https://github.com/deli-ght">GIT-HUB</li>
+    </ul>
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-g64fwqa967.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+</body>
